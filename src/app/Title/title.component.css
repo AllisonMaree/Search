@@ -1,0 +1,50 @@
+/*.page-header {
+	background-color: gray;
+}
+*/
+.container {
+	background-color: gray;
+}
+
+
+
+#fpnav li{
+   float: left;
+   padding-top: 40px;
+   padding-left: 50px;
+}
+
+#fpnav li a{
+   padding: 2px;
+   text-decoration: none;
+   color: #d6cec0;
+}
+
+#headbanner { 
+   height: 60px;
+   background-color: 657071;
+   margin-bottom: 15px;
+  /* width: 100%;*/ 
+}
+
+#logo {
+   color:blue;
+   font-size:18pt;
+   font-family:tahoma;
+   font-weight: 100;
+   padding-left: 65px;
+   padding-top: 10px;   
+}
+
+li.mainPage a:hover {
+   color: white;
+}
+
+
+li.mainPage {
+   display: inline;
+   font-style: arial;
+   font-size: 12px;
+           }
+
+

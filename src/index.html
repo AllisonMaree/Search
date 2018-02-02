@@ -7,8 +7,88 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+   
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js
+"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>KELLY FORSLUND INC</title>
+
 </head>
+
 <body>
+
+
+<script>
+
+    const myLi = document.getElementById('test');
+
+const ul = document.getElementById('results');
+
+const url = 'https://vast-mesa-68588.herokuapp.com//item/filter?tags=sofa';
+
+ function createNode(element) {
+    return document.createElement(element); // Create the type of element you pass in the parameters
+  }
+
+  function append(parent, el) {
+    return parent.appendChild(el); // Append the second parameter(element) to the first one
+  }
+
+function myFunction() {
+fetch(url) 
+.then((resp) => resp.json())
+.then(function(data) {
+    let authors = data.items;
+     console.log(authors);
+      return authors.map(function(item) {
+         console.log(item.name);
+         let li = createNode('li'),
+             img = createNode('img'),
+             span = createNode('span');
+         
+          span.innerHTML = '${item.name} $(item.dimensions}';
+          
+           append(li,img);
+           append(li, span);
+           append(ul, li);
+
+   })     
+        
+})
+
+.catch(function(error) {
+    alert("there was an error");
+
+});
+
+}
+</script>
+
+<ul id='results'>
+</ul>
+
   <app-root></app-root>
+
 </body>
 </html>

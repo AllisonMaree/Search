@@ -1,0 +1,15 @@
+div {
+	border: thin solid black;
+	/*background-color: #e8e4e3;*/
+	background-color:Snow;
+
+}
+
+
+.options{
+	height:100%;
+	width: 100%;
+	background: white;
+	border: none;
+	
+}
